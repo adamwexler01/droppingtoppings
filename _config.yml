@@ -1,25 +1,65 @@
-# Site settings
-title: Dropping Toppings
-email: damosdesigns@gmail.com
-description: Dropping Toppings
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "" # the base hostname & protocol for your site
+# SITE CONFIGURATION
+title: Dropping Toppings Shop # your site title
+author: Dropping Toppings # You :P
+name: 'Dropping Toppings'
+description: 'Homemade Pizza Paired with Delicious Music'
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://wwww.droppingtoppings.com"
 
-# User setting
-owner:
-email:
-facebook_username:
-twitter_username:
-github_username:
-address:
-  - line:
-  - line:
-  # Feel free to add more lines here
-telephone:
-copyright:
+# SEO PLUGIN
+social:
+  name:
+  links:
 
-# API settings
-google_api_key:
+# THEME SETTINGS
+navigation: # Navigation links
+  # - {name: 'Home', link: '/'}
 
-# Build settings
+tagline: "Homemade Pizza Paired with Delicious Music"
+
+
+hero_img: posts/.jpg # Main background image: use the path from /assets/img/ => This will output /assets/img/posts/sleek_lg.jpg
+
+email: damosdesigns+droppingtoppings@gmail.com # email for form submission
+
+# twitter_username: jan_czizikow # replace with your_twitter_username or comment to remove link from footer
+instagram_username: droppingtoppings # replace with your_instagram_username or comment to remove link from footer
+
+disqus:
+  shortname: droppingtoppings-com # to enable comments replace with your_disqus_shortname
+
+# google_tag_manager: GTM-XXXXXXX # Uncomment to enable GTM. Replace GTM-XXXXXXX with your GTM container ID
+
+service_worker: true
+
+# BUILD SETTINGS
 markdown: kramdown
+highlighter: rouge # or pygments or null
+# theme: jekyll-sleek # Uncomment if you're using the theme as a ruby gem
+exclude:
+  - README.md
+  - node_modules
+  - script
+  - package.json
+  - package-lock.json
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - npm-debug.log
+  - gulpfile.js
+
+include: ['_pages']
+permalink: /:title/
+include: ['_success']
+permalink: /:title/
+
+sass:
+  sass_dir: _sass
+
+compress_html:
+  clippings: all
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-admin

@@ -3,6 +3,9 @@ source "https://rubygems.org"
 gem 'wdm'
 gem 'jekyll'
 
+gem 'rails'
+gem 'printful_api'
+
 group :jekyll_plugins do
   gem 'jekyll-sitemap'
   gem 'jekyll-feed'

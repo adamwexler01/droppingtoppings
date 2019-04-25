@@ -1,0 +1,82 @@
+<div style="float:left; margin-right:5%">
+  <img src="{{page.itemImgUrl}}" alt="{{page.downloadFileTitle}}">
+</div>
+
+<h3> #1. Set a custom price </h3>
+<div style="float:left" id="paypal-button-container">
+  <div style="marginTop:20px; marginBottom:20px">
+    <span style="color:#aaa">Minimum custom price</span>
+
+    <div id="customPriceWrapper">
+      $<input id="donationAmount" onchange="maintainMinimumPrice()" type="text" name="donationAmount" value="{{page.cost}}" pattern="(\s)*[0-9]*(.[0-9]?[0-9]?)?(\s)*" required>
+    </div>
+
+    <div style="clear:both">
+      <h2 style="text-align:right" id="displayPrice">Price: ${{page.cost}}</h2>
+      <h3>#2. Select a payment option:</h3>
+    </div>
+  </div>
+</div>
+
+<div style="clear:both"></div>
+<script src="https://www.paypalobjects.com/api/checkout.js"></script>
+
+<script>
+function maintainMinimumPrice(){
+    var donationElement = document.getElementById("donationAmount");
+    var value = parseFloat(donationElement.value.toString().trim());
+    if(value < {{page.cost}} || !donationElement.validity.valid){
+        value = {{page.cost}};
+        donationElement.value = value;
+    }
+    document.getElementById("displayPrice").textContent = "$" + value;
+}
+</script>
+
+<script>
+paypal.Button.render({
+env: 'production',
+
+style: {
+  layout: 'vertical',
+  size:   'medium',
+  shape:  'rect',
+  color:  'gold'
+},
+
+funding: {
+  allowed: [
+    paypal.FUNDING.CARD,
+    paypal.FUNDING.CREDIT
+  ],
+  disallowed: []
+},
+
+client: {
+  sandbox: 'AZ-GPboy8D4HUVN1Re6KfwF7BfAYtDxx2gl-JaazfG6a5lQwxLKzqgEwTbEFwrB9J0AxtuzbObbi0uc3',
+  production: 'AZtE37oLvAlsZBF2TMT9UsTx50dTCYHo7YfclGNHqjvDPqEtvKFjdsphZUC4yn15eaS3jvd8FnTXGp6U'
+},
+
+payment: function (data, actions) {
+  return actions.payment.create({
+    payment: {
+      transactions: [
+        {
+          amount: {
+            total: document.getElementById("donationAmount").value.toString().trim(),
+            currency: 'USD'
+          }
+        }
+      ]
+    }
+  });
+},
+
+onAuthorize: function (data, actions) {
+  return actions.payment.execute()
+    .then(function () {
+      window.location=window.location.origin + "/_success/{{page.successFileName}}";
+    });
+}
+}, '#paypal-button-container');
+</script>
