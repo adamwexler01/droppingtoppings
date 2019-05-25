@@ -1,4 +1,4 @@
-input,
+  input,
 textarea {
   display: inline-block;
   padding: 5px 0;
@@ -7,12 +7,15 @@ textarea {
   border-bottom: 2px solid $border;
   outline: none;
   font-family: $font-stack;
-  background: transparent;
 
   &:focus {
     border-color: $primary;
     transition: border-color .25s;
   }
+}
+
+.form-control {
+  padding-bottom: 135px;
 }
 
 .form__input {

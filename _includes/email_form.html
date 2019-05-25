@@ -2,15 +2,19 @@
 	<form id="funForm" action="https://formspree.io/damosdesigns@gmail.com" method="POST">
 		<div style="display:none">
 			<input name="_gotcha" class="form-control" type="hidden">
-			<input name="_next" type="hidden" value="http://www.damosdesigns.com/_success/success_donation/">
+			<input name="_next" type="hidden" value="">
 		</div>
 		<div>
 			<label>Name</label>
-			<input name="name" autocomplete="name" type="text" class="form-control">
+			<input name="name" autocomplete="name" type="text" class="form-control" required>
 		</div>
 		<div>
 			<label>Email</label>
-			<input name="_replyto" autocomplete="email" type="email" class="form-control">
+			<input name="_replyto" autocomplete="email" type="email" class="form-control" required>
+		</div>
+		<div>
+			<label>Order # (if applicable)</label>
+			<input name="_replyto" autocomplete="email" type="email" class="form-control" >
 		</div>
 		<div>
 			<label>Message</label>

@@ -13,7 +13,9 @@ social:
 
 # THEME SETTINGS
 navigation: # Navigation links
-  # - {name: 'Home', link: '/'}
+  - {name: 'Shop', link: '/'}
+  - {name: 'Music', link: '/music/'}
+  - {name: 'About', link: '/about/'}
 
 tagline: "Homemade Pizza Paired with Delicious Music"
 

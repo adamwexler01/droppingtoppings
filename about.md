@@ -2,17 +2,20 @@
 layout: page
 title: About
 permalink: /about/
-cost: .99
-successFileName: success_donation
+
+featured-img-png: cheese_background
+featured: true
 ---
-# Hello World!
 
-Hey there! I'm Damien, but you can call me Damo if you prefer. I graduated from University of Florida with a Computer Engineering: Digital Arts and Sciences degree in 2015.
+# Thank you for supporting Dropping Toppings as this website continues to bake!
+Dropping Toppings was started in 2019 as a way to express love for two of life's most important topics: pizza and music.
 
-Damos Designs was first founded as a T-Shirt/promotional product design company in 2012. After two years of sales, shipping 200+ designs across the country, my focus shifted to software in addition to digital art.
+# Secure Checkout
+This website uses [Snipcart](https://snipcart.com/) and [PayPay](https://www.paypal.com) for a secure checkout process you can trust.
 
-I have experience in building Virtual Reality experiences, 3D modeling assets, 3D printing prototypes, developing end to end Chrome Extensions, Chromecast Applications, Android Applications, Android for Auto, Android Wear, building custom high end computers, mining cryptocurrency, and creating multidimensional digital art.
+# Delivery Times
+Delivery times will vary based on the product and shipping speed selected as some products are shipped from other countries. On average, the standard shipping is just a few days and should take no longer than 14 business days.
 
-Thanks for visiting my website. Hopefully I was able to teach you something new or inspire you to start your next project.
-
-I'm always looking for exciting new projects. If you need help bringing your ideas to life, reach out from any of the ways on my [Contact](/contact/) page. I'd be happy to help!
+# Support
+If you have any issues while ordering please send a message below and someone will respond immediately.
+{% include email_form.html %}
