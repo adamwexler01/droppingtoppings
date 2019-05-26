@@ -1,6 +1,6 @@
 <div class="pizza-card" itemprop="blogPosts" itemscope="" itemtype="http://schema.org/BlogPosting">
   <a href="{{ post.url | relative_url }}">
-    {% if post.featured-img-png %}
+    <!-- {% if post.featured-img-png %}
       <figure class="pizza-card__thumb">
         <img
           src="{{ site.url }}{{ site.baseurl }}/assets/img/posts/{{post.featured-img}}_placehold.png",
@@ -23,7 +23,7 @@
       <figure class="pizza-card__thumb">
         <div class="dark-bg"></div>
       </figure>
-    {% endif %}
+    {% endif %} -->
       <div style="margin-left:10px; margin-top:15px; margin-right:10px; margin-bottom:0px">
       {% if post.categories %}
         {% assign categories = post.categories %}
