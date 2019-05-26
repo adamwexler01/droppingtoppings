@@ -411,9 +411,10 @@ a{
     color:#fff
 }
 .blog{
-    background-color:#f9f9f9
+    background-color:transparent
 }
 .post-list{
+    background-color: transparent;
     padding-top:2.5em;
     display:-webkit-box;
     display:-ms-flexbox;
