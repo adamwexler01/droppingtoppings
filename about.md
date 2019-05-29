@@ -17,10 +17,10 @@ If you have any issues while ordering please send a message below and a REAL LIV
 <br>
 
 ### Delivery Times
-Delivery times will vary based on the product and shipping speed selected as some products are shipped from other countries. No order should take no longer than 14 business days.
+Delivery times will vary based on the product and shipping speed selected as some products are shipped from other countries. No order should take longer than 14 business days.
 
 ### Secure Checkout
 This website uses [Snipcart](https://snipcart.com/) and [PayPal](https://www.paypal.com) for a secure checkout process you can trust.
 
 ### Return Policy
-All sales are final. However, accidents happen. If an item arrives defective, please send a message with the form above describing the issue and a REAL LIVE HUMAN will respond to help you. 
+All sales are final. However, accidents happen. If an item arrives defective, please send a message using the form above describing the issue in detail and a REAL LIVE HUMAN will respond to help you.
